@@ -3,11 +3,21 @@ public class Book {
     private int numberOfPages;
     private int publicationYear;
 
-    // Constructor
+    // Constructor with all parameters
     public Book(String title, int numberOfPages, int publicationYear) {
         this.title = title;
         this.numberOfPages = numberOfPages;
         this.publicationYear = publicationYear;
+    }
+
+    // Constructor with title and numberOfPages, defaults publicationYear
+    public Book(String title, int numberOfPages) {
+        this(title, numberOfPages, 0);
+    }
+
+    // Default constructor
+    public Book() {
+        this("Untitled", 0, 0);
     }
 
     // Getters

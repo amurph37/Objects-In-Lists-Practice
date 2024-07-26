@@ -20,6 +20,11 @@ public class MainBook {
             books.add(new Book(title, numberOfPages, publicationYear));
         }
 
+        // Adding some books using different constructors
+        books.add(new Book("Harry Potter", 500, 1997));
+        books.add(new Book("The Hobbit", 310));
+        books.add(new Book());
+
         System.out.print("What information would you like to print? (everything/name): ");
         String choice = scanner.nextLine();
 

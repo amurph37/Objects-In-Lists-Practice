@@ -3,11 +3,21 @@ public class TvShow {
     private int numberOfEpisodes;
     private String genre;
 
-    // Constructor
+    // Constructor with all parameters
     public TvShow(String showName, int numberOfEpisodes, String genre) {
         this.showName = showName;
         this.numberOfEpisodes = numberOfEpisodes;
         this.genre = genre;
+    }
+
+    // Constructor with showName and numberOfEpisodes, defaults genre
+    public TvShow(String showName, int numberOfEpisodes) {
+        this(showName, numberOfEpisodes, "Unknown");
+    }
+
+    // Default constructor
+    public TvShow() {
+        this("Unnamed Show", 0, "Unknown");
     }
 
     // Getters

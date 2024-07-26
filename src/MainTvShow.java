@@ -20,6 +20,11 @@ public class MainTvShow {
             tvShows.add(new TvShow(showName, numberOfEpisodes, genre));
         }
 
+        // Adding some TV shows using different constructors
+        tvShows.add(new TvShow("Breaking Bad", 62, "Drama"));
+        tvShows.add(new TvShow("Friends", 236));
+        tvShows.add(new TvShow());
+
         System.out.println("TV shows in the list:");
         for (TvShow tvShow : tvShows) {
             System.out.println(tvShow);

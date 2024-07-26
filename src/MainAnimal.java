@@ -19,6 +19,11 @@ public class MainAnimal {
             animals.add(new Animal(name, isDog));
         }
 
+        // Adding some animals using different constructors
+        animals.add(new Animal("Buddy", true));
+        animals.add(new Animal("Fluffy"));
+        animals.add(new Animal());
+
         System.out.println("Animals in the list:");
         for (Animal animal : animals) {
             System.out.println(animal);
